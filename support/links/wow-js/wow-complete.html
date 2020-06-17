@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="animate.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="svg-bg.css">
+	<title>CSS Animate it</title>
+	<style media="screen">
+	
+		:root {
+			--margin: 12px;
+			--color-1: #ae23ff;
+			--color-2: #ffa023;
+		}
+		
+		h1, h2, h3 { font-weight: normal; }
+		h1 { 
+			font-size: 54px; 
+			color: var(--color-1);
+		}
+		
+		body {
+			font-family: 'Righteous', cursive;
+			margin: 52px 160px;
+			overflow-x: hidden;
+		}
+		
+		article {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 42px; 
+		}
+		
+		div:first-child { margin-right: var(--margin); }
+		div:last-child { margin-left: var(--margin); }
+		
+		article > div {
+			border-radius: 4px;
+			padding: 21px;
+			color: white;
+		}
+		
+		article:nth-child(1n) div { background-color: var(--color-1); }
+		article:nth-child(1n) button { color: var(--color-1); }
+		article:nth-child(2n) div { background-color: var(--color-2); }
+		article:nth-child(2n) button { color: var(--color-2); }
+		
+		button {
+			outline: none;
+			border: 2px solid white;
+			font-family: inherit;
+			font-size: 1.2em;
+			background-color: white;
+			padding: .6em 3em;
+			border-radius: 10000px;
+			transition: all .4s;
+		}
+		
+		button:hover {
+			background-color: transparent;
+			color: white !important;
+		}
+	
+	</style>
+</head>
+<body class="svg-bg-1">
+	
+	
+	
+	<!-- https://wowjs.uk/docs.html -->
+	<h1>Animation with wow js</h1>
+	
+	
+	<!-- data-wow-duration="1.5s" -->
+	<!-- data-wow-delay=".5s" -->
+	<!-- data-wow-offset="200" -->
+	<!-- data-wow-iteration="999" -->
+	
+	
+	<main>
+		<article>
+			<div class="wow slideInLeft">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow slideInRight">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow slideInUp" data-wow-delay="0s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow slideInUp" data-wow-delay=".1s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow rotateInDownLeft" data-wow-duration=".8s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow rotateInDownRight" data-wow-duration=".8s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow bounceInLeft" data-wow-duration=".8s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow bounceInRight" data-wow-duration=".8s">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow fadeIn" data-wow-offset="300">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow fadeIn" data-wow-offset="300">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow flipInX">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow flipInY">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow zoomInLeft">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow zoomInRight">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow zoomInUp">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow zoomInDown">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow jackInTheBox">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow hinge">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+		<article>
+			<div class="wow shake" data-wow-iteration="999">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+			<div class="wow bounce" data-wow-iteration="999">
+				<h2>Sub Header</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" name="button">Read More</button>
+			</div>
+		</article>
+	</main>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src='wow.min.js'></script>
+	<script src='wow-activate.js'></script>
+</body>
+</html>
